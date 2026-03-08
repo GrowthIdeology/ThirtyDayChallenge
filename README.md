@@ -1,31 +1,31 @@
-# 30-Day Challenge GitHub Pages Website
+# 30-Day Challenge GitHub Pages Site
 
-This folder contains a Markdown-based GitHub Pages website for the 30-Day Challenge iOS app.
+This package contains a polished Markdown-based GitHub Pages website for the **30-Day Challenge** iOS app.
 
-## Files
+## Included pages
+- `index.md` — landing page
+- `terms.md` — terms page
+- `privacy-policy.md` — privacy page
+- `support.md` — support page
+- `_config.yml` — GitHub Pages config
 
-- `index.md` — homepage
-- `_config.yml` — GitHub Pages Jekyll config
-- `assets/images/app-icon.png` — app icon
-- `terms.md` — terms of use page
-- `privacy-policy.md` — privacy policy page
-- `support.md` — support and FAQ page
-
-## How to publish
-
-1. Create a GitHub repository.
-2. Put these files inside a `docs/` folder, or use them at the repository root.
+## Publish steps
+1. Copy these files into your repository `docs/` folder.
+2. Push to GitHub.
 3. Go to **Settings → Pages**.
-4. Choose your publishing source.
-5. Save.
+4. Choose **Deploy from a branch**.
+5. Select **main** and **/docs**.
+6. Save.
 
-## Suggested repo layout
+## Site URLs
+After publishing, your pages will be available at:
+- `/`
+- `/terms`
+- `/privacy-policy`
+- `/support`
 
-```text
-repo/
-├── docs/
-│   ├── index.md
-│   ├── _config.yml
-│   └── assets/
-└── ThirtyDayChallenge/
-```
+## Optional next improvements
+- add device screenshots
+- add App Store / TestFlight CTA
+- add FAQ page
+- add custom domain

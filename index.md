@@ -1,74 +1,131 @@
 ---
 layout: default
 title: 30-Day Challenge
-description: Offline iOS challenge tracker with JSON-powered custom challenges.
+description: Offline iOS challenge tracker with customizable 30-day challenge packs.
 ---
 
-# 30-Day Challenge
+<div style="text-align:center; padding: 1rem 0 0.5rem 0;">
+  <img src="assets/images/app-icon.png" alt="30-Day Challenge App Icon" width="140" style="border-radius: 28px; box-shadow: 0 12px 30px rgba(0,0,0,0.12);">
+</div>
 
-![30-Day Challenge App Icon](assets/images/app-icon.png)
+<h1 style="text-align:center; margin-bottom:0.4rem;">30-Day Challenge</h1>
+<p style="text-align:center; font-size:1.15rem; max-width:760px; margin:0 auto 1rem auto;">
+Build better habits in 30 days — fully offline, beautifully simple, and customizable with your own challenge packs.
+</p>
 
-**An offline, notebook-style iOS app for 30-day self-improvement challenges.**  
-Create, import, and track fully local challenge packs with no internet required.
+<p style="text-align:center; margin-bottom:1.5rem;">
+  <a href="#why-it-works"><strong>Why it works</strong></a> ·
+  <a href="#features"><strong>Features</strong></a> ·
+  <a href="#challenge-packs"><strong>Challenge packs</strong></a> ·
+  <a href="#for-creators"><strong>For creators</strong></a> ·
+  <a href="./privacy-policy"><strong>Privacy</strong></a> ·
+  <a href="./terms"><strong>Terms</strong></a> ·
+  <a href="./support"><strong>Support</strong></a>
+</p>
 
-[View source on GitHub](#get-the-code) · [Challenge format](#challenge-package-format) · [GitHub Pages setup](#publish-with-github-pages) · [Terms of Use](./terms) · [Privacy Policy](./privacy-policy) · [Support](./support)
+<div style="background: linear-gradient(180deg, #fffaf3 0%, #fff 100%); border:1px solid #f0e3cf; border-radius:20px; padding:1.4rem; margin: 1rem 0 2rem 0; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+  <h2 style="margin-top:0;">A local-first iOS app for journaling, habits, and guided 30-day programs</h2>
+  <p>
+    30-Day Challenge is designed for creators, coaches, and self-improvement brands that want a simple mobile app shell
+    powered by reusable JSON challenge packs. Users can install challenge content, track progress, write reflections,
+    and stay focused without needing an account or internet connection.
+  </p>
+  <p style="margin-bottom:0;">
+    <strong>Best fit for:</strong> self-improvement, budgeting, prayer, studying, productivity, reading, wellness, and lifestyle programs.
+  </p>
+</div>
 
-## Why this app stands out
+## Why it works {#why-it-works}
 
-- **Fully offline** — no internet, analytics, or cloud dependency
-- **JSON-powered** — add new 30-day challenges without changing the app architecture
-- **Notebook-style UI** — warm paper design with a focused daily journaling flow
-- **Multilingual-ready** — translations and labels are driven by challenge JSON
-- **Custom habit tracker** — configurable columns for any challenge type
-- **Built for creators** — package and publish your own challenge libraries
+<table>
+  <tr>
+    <td><strong>100% offline</strong><br>No login, no cloud dependency, no required internet.</td>
+    <td><strong>Customizable content</strong><br>Add new 30-day programs without rebuilding the app UI.</td>
+  </tr>
+  <tr>
+    <td><strong>Notebook-style flow</strong><br>Designed for a warm, focused daily reflection experience.</td>
+    <td><strong>Translation-ready</strong><br>Labels and content can be localized through JSON packs.</td>
+  </tr>
+</table>
 
-## Core features
+## Features {#features}
 
-### Daily notebook workflow
-Each day includes:
-- Morning checklist
-- Afternoon checklist
-- Evening checklist
-- Today’s challenge
-- Reflection prompts
-- Notes and progress scoring
+### Daily experience
+Each day can include:
+- morning checklist
+- afternoon checklist
+- evening checklist
+- daily challenge prompt
+- notes and reflections
+- progress tracking fields
 
-### Local-first challenge library
-Install multiple challenge packs and switch between them directly in the app.
+### Local challenge library
+Users can keep multiple challenge packs on-device and switch between them inside the app.
 
-### Import your own challenges
-Users can import `.json` challenge files from Files, AirDrop, shared links, and cloud storage providers supported by iOS.
+### Import from files
+Challenge packs can be distributed as `.json` files and imported from Files, AirDrop, or other iOS-supported locations.
 
-### Flexible scoring and tracking
-Track values like:
-- Sleep
-- Focus
-- Mood
-- Energy
+### Flexible tracking
+The same tracker structure can support habits like sleep, focus, prayer, money, reading, exercise, gratitude, or study time.
 
-Or redefine them for any challenge, such as money, fitness, prayer, study, or productivity.
+## What the app can become
 
-## Included challenge ideas
+This app structure can support many product directions:
 
-The current project already shows how the format can support multiple themes:
+- **Habit Builder App**
+- **Guided Journal App**
+- **30-Day Budget Challenge App**
+- **Faith and Prayer Challenge App**
+- **Study Sprint App**
+- **Wellness Reset App**
 
-- Brain upgrade / self-improvement
-- Spending tracker / money challenge
-- Indonesian and English challenge packs
+## Challenge packs {#challenge-packs}
 
-That means the same app structure can power many downloadable challenge products.
+The current project already shows multi-pack support, including themes like budgeting and self-improvement. That means you can turn one app into a reusable platform for multiple downloadable experiences.
 
-## Best use cases
+### Example JSON format
 
-This app can be positioned as:
+```json
+{
+  "id": "my-challenge-v1",
+  "version": "1.0",
+  "language": "en",
+  "metadata": {
+    "title": "My 30-Day Challenge",
+    "subtitle": "A subtitle",
+    "author": "Growth Ideology",
+    "durationDays": 30,
+    "labels": {
+      "morning": "Morning Checklist",
+      "afternoon": "Afternoon Checklist",
+      "evening": "Evening Checklist",
+      "todayChallenge": "Today's Challenge",
+      "reflection": "Reflection"
+    }
+  },
+  "habitTrackerColumns": ["Sleep", "Exercise", "Reading"],
+  "days": []
+}
+```
 
-- a **30-day habit challenge app**
-- a **guided journal app**
-- a **self-improvement tracker**
-- a **money tracking challenge app**
-- a **faith, reading, health, or study challenge platform**
+### Why this format matters
 
-## App architecture summary
+- launch new challenge themes faster
+- localize to new languages
+- sell or share niche packs without redesigning the app
+- keep the same core app experience across many products
+
+## For creators {#for-creators}
+
+If you are building a brand around content, coaching, or education, this app gives you a flexible product format:
+
+1. Build one iOS app shell
+2. Publish multiple challenge packs
+3. Translate to different languages
+4. Keep user data private and local
+5. Grow a product ecosystem around recurring 30-day experiences
+
+## App architecture
 
 ```text
 SwiftUI app
@@ -80,57 +137,7 @@ SwiftUI app
 └── Resources/           Challenge JSON packages + assets
 ```
 
-## Challenge package format
-
-Every challenge is a single `.json` file.
-
-```json
-{
-  "id": "my-challenge-v1",
-  "version": "1.0",
-  "language": "en",
-  "metadata": {
-    "title": "My 30-Day Challenge",
-    "subtitle": "A subtitle",
-    "author": "Author Name",
-    "description": "What this challenge is about.",
-    "durationDays": 30,
-    "createdDate": "2026-01-01",
-    "tags": ["health"],
-    "labels": {
-      "morning": "Morning Checklist",
-      "afternoon": "Afternoon Checklist",
-      "evening": "Evening Checklist",
-      "todayChallenge": "Today's Challenge",
-      "reflection": "Reflection"
-    }
-  },
-  "coreRules": ["Rule 1", "Rule 2"],
-  "habitTrackerColumns": ["Sleep", "Exercise", "Reading"],
-  "days": []
-}
-```
-
-### What this enables
-
-- You can launch **new 30-day products** without rebuilding the app UI
-- You can localize the experience by changing JSON labels and content
-- You can create downloadable packs for niches like finance, prayer, studying, fitness, or parenting
-
-## For app creators
-
-This project is especially useful if you want to:
-
-1. Build one iOS app shell
-2. Sell or distribute multiple challenge packs
-3. Support multiple languages
-4. Keep all user data local on-device
-
-## Get the code
-
-Place your Xcode project in the same repository or link this site to your app repository.
-
-Suggested repo structure:
+## Suggested repository structure
 
 ```text
 your-repo/
@@ -141,43 +148,26 @@ your-repo/
 
 ## Publish with GitHub Pages
 
-GitHub Pages can publish a site from a branch or from a `/docs` folder in your repository, and Markdown works well with Jekyll.
+1. Put this website inside the `docs/` folder of your repository.
+2. Push the repository to GitHub.
+3. Open **Settings → Pages**.
+4. Set **Source** to **Deploy from a branch**.
+5. Select **main** and **/docs**.
+6. Save and wait for GitHub Pages to publish the site.
 
-### Recommended setup
+## Need legal pages?
 
-1. Create a GitHub repository for the app
-2. Add this website inside a `docs/` folder
-3. Push your code to GitHub
-4. In **Settings → Pages**, choose:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/docs`
-5. Save and wait for the site URL to appear
-
-If you publish from a source branch, Jekyll builds the site by default.
-
-## Suggested copy for the homepage hero
-
-> Build better habits in 30 days — fully offline, beautifully simple, and customizable with your own challenge packs.
-
-
-## Legal & support
-
-For App Store review and user support pages:
+These are already included in this website package:
 
 - [Terms of Use](./terms)
 - [Privacy Policy](./privacy-policy)
 - [Support](./support)
 
-## Roadmap ideas
+## Next ideas
 
-- App screenshots section
-- Download / TestFlight section
-- Privacy policy page
-- Challenge marketplace page
-- Documentation for building custom JSON packs
-- FAQ for import and translations
-
-## License
-
-MIT
+- add real iPhone screenshots
+- add TestFlight or App Store button
+- add FAQ page
+- add changelog page
+- add challenge marketplace page
+- add docs for authors creating JSON packs
