@@ -1,0 +1,6 @@
+title: 30-Day Challenge
+description: Offline iOS challenge tracker with JSON-powered custom challenges.
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
